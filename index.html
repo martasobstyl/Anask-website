@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anask - wynajem pokoi</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="Shortcut icon" href="img/rsz_1logo2.png" />
+
+	<script type="text/javascript" src="script/jquery-3.0.0.min.js" ></script>
+	<script type="text/javascript" src="script/script.js"></script>
+	<script src="script/jquery.cycle2.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/animate.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+</head>
+<body>
+	<nav>
+		<a href="#home"><img src="img/logo2.png"/></a>
+		<ul>
+			<li><a href="#home" class="main active">STRONA GŁÓWNA</a></li>
+			<li><a href="#about">O NAS</a></li>
+			<li><a href="#offer">OFERTA</a></li>
+			<li><a href="#gallery">GALERIA</a></li>
+			<li><a href="#contact">KONTAKT</a></li>
+		</ul>
+	</nav>
+
+	<div id="home" class="home">
+		<div class="welcome animated fadeIn">
+			<h2>WITAMY SERDECZNIE !</h2>
+			<h4>Zapraszamy Państwa do naszego domu gościnnego ,,Anask"</h4>
+			<h4>zlokalizowanego w samym centrum aglomeracji górnośląskiej</h4>
+			<h4>w Czerwionce-Leszczynach.</h4>
+			<p>Miła atmosfera oraz dogodna lokalizacja sprawią,</p>
+			<p>że Państwa pobyt w Czerwionce-Leszczynach</p>
+			<p>na pewno będzie udany.</p>
+		</div>
+		<div class="image animated fadeIn">
+			<img src="img/rsz_img8.jpg">
+		</div>
+	</div>
+
+	<div id="about" class="about no-selected">
+		<div class="animated fadeIn">
+			<img src="img/rsz_img1.png">
+		</div>
+		<div class="opis animated fadeIn">
+			<h3>Zapraszamy Państwa do naszego domu gościnnego!</h3>
+			<p>Oferujemy 24 miejsca noclegowe. Posiadamy własny parking na 8 samochodów osobowych oraz możliwość zaparkowania samochodu ciężarowego. Taka liczba miejsc pozwala nam na przyjmowanie większych grup, dla których przygotowaliśmy indywidualną ofertę cenową. Jeśli szukasz noclegu dla wycieczek lub pracowników, skontaktuj się z nami i dowiedz się więcej szczegółów.<p>
+			<p>W promieniu 1km znajdują się:</p>
+			<ul>
+				<li>Biedronka</li>
+				<li>Intermarche</li>
+				<li>Bank PeKaO S.A.</li>
+				<li>Bankomaty</li>
+				<li>Myjnia samochodowa</li>
+				<li>Przystanki autobusowe</li>
+				<li>Dworzec PKP</li>
+				<li>Przychodnia lekarska oraz apteki</li>
+				<li>Pizzeria ,,Miketa"</li>
+				<li>Club "Bajlando", pobliskie puby</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="offer" class="offer no-selected">
+		<div class="image2 animated fadeIn">
+			<img src="img/rsz_img9.jpg">
+		</div>
+		<div class="oferta animated fadeIn">
+			<h3>Oferujemy Państwu:</h3>
+			<table>
+				<thead></thead>
+				<tbody>
+				<tr>
+					<td class="icon"><i class="fa fa-bed fa-2x" aria-hidden="true"></i></td>
+					<td>
+						<p>• nocleg w pokojach -2, -3, -4, -6 i -9 osobowych</p>
+						<p>• recepcję czynną 24h na dobę</p>
+						<p>• bezpłatny Internet (Wi-Fi)</p>
+						<p>• w pełni wyposażoną kuchnię</p>
+						<p>• bezpłatną przechowalnię bagaży</p>
+						<p>• TV SAT we wszystkich pokojach</p>
+						<p>• możliwość wypożyczenia ręczników</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="icon"><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i></td>
+					<td><p>Doba hotelowa od 14:00 do 10:00</p></td>
+				</tr>
+				<tr>
+				<td class="icon"><i class="fa fa-users fa-2x" aria-hidden="true"></i></td>
+				<td><p>Do dyspozycji gości: sala kominkowa, miejsce na ognisko, boisko do gry, grill, kuchnia ogólnodostępna</p></td>
+				</tr>
+				<tr>
+					<td class="icon"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i></td>
+					<td><p>Udogodnienia: pralka, deska do prasowania, żelazko</p></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div id="gallery" class="gallery no-selected">
+		<div class="cycle-slideshow animated fadeIn" data-cycle-fx=scrollHorz data-cycle-timeout=0>
+			<div class="cycle-prev"></div>
+			<div class="cycle-next"></div>
+			<img src="img/rsz_img2.jpg">
+			<img src="img/rsz_img3.jpg">
+			<img src="img/rsz_img4.jpg">
+			<img src="img/rsz_img5.jpg">
+			<img src="img/rsz_img6.jpg">
+			<img src="img/rsz_img7.jpg">
+		</div>
+	</div>
+
+	<div id="contact" class="contact no-selected">
+		<form id="formularz" class="animated fadeIn">
+			<p>Formularz kontaktowy</p>
+			<input type="text" placeholder="Nazwa Firmy">
+			<input type="email" placeholder="Email" required>
+			<textarea placeholder="Wpisz wiadomość"></textarea>
+			<input type="submit" name="Wyślij" value="Wyślij" class="wyslij">
+		</form>
+		<div class="kontakt animated fadeIn">
+			<div>
+				<h3>Obiekt Noclegowy "Anask"</h3>
+				<table>
+					<thead></thead>
+					<tbody>
+					<tr>
+						<td class="icon"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></td>
+						<td>
+							<p>Anna Skoczykłoda</p>
+							<p>ul. Powstańców Śląskich 103 c</p>
+							<p>44-238 Czerwionka-Leszczyny</p>
+							<p>woj. śląskie</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="icon"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></td>
+						<td><p>513 - 151 - 859</p></td>
+					</tr>
+					<tr>
+						<td class="icon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></td>
+						<td><p>anna@skoczykloda.pl</p></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.4683654433297!2d18.646316315205205!3d50.13366941802141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47114a321a72048f%3A0xef7a481ec61bcc81!2sPowsta%C5%84c%C3%B3w+%C5%9Al%C4%85skich+103C%2C+44-238+Czerwionka-Leszczyny!5e0!3m2!1spl!2spl!4v1466174293878" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<p>&copy Anask 2016 ~ Wszelkie prawa zastrzeżone</p>
+	</footer>
+	<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
