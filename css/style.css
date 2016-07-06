@@ -38,7 +38,6 @@ nav img{
 	border-color: #fff5eb;
 	border-radius: 10px;
 	padding: 35px 25px 25px 25px;
-	margin-top: -10px;
 	margin-left: 3%;
 	float: left;
 }
@@ -48,25 +47,25 @@ nav ul {
 	font-family: 'Ubuntu', sans-serif;
 	background-color: #fff5eb;
 	border-radius: 10px;
-	float: left;
+	display: inline-block;
 	text-align: center;
 	line-height: 30px;
 	width: calc(100% - 287px);
-	margin: 2%;
-	margin-top: -10px;
-	padding: 3% 2% 1% 11%;
+	margin-left: 3%;
+	padding: 1%;
 	list-style-type: none;
 }
 
 nav ul li {
-	float: left;
-	margin-right: 5%;
+	width: 15%;
+	display: inline-block;
+	margin-right: 4%;
 }
 
 nav ul a {
 	color: #034ea2;
 	display: block;
-	padding: 15px;
+	padding: 7%;
 	text-decoration: none;
 	border-radius: 10px;
 	text-align: center;
@@ -84,7 +83,7 @@ nav ul a:hover {
 	color: #fff5eb;
 	background-color: #f5821f;
 	border-radius: 10px;
-	padding: 15px;
+	/*padding: 7%;*/
 }
 
 div.home {
@@ -340,7 +339,7 @@ footer {
 	margin-left: 3%;
 	margin-right: 3%;
 	background-color: #fff5eb;
-	border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0 0;
 }
 
 .selected {
@@ -352,4 +351,58 @@ footer {
 
 .no-selected {
 	display: none;
+}
+
+.menubar {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: block;
+}
+
+@media screen and (max-width: 685px){
+	nav {
+		position: relative;
+		height: auto;
+	}
+
+	nav img {
+		display: inline-block;
+		height: auto;
+		float: none;
+		margin-left: 5%;
+	}
+
+	nav .bar {
+		display: inline-block;
+		margin-left: 3%;
+	}
+
+	nav .bar .fa-bars {
+		color: #034ea2;
+	}
+
+	nav ul {
+		display: block;
+		width: 90%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	nav ul li {
+		width: 100%;
+		margin: 0;
+	}
+
+	nav ul li a {
+		padding: 2%;
+	}
+
+	div.home, div.about, div.offer, div.contact {
+		margin-top: 0;
+	}
+
+	div.home div.welcome, div.home div.image {
+		display: block;
+	}
 }
