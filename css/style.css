@@ -1,408 +1,457 @@
-html{
-	box-sizing: border-box;
-	position: relative;
-	min-height: 100%;
-}
+html {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100%; }
 
-*, *:before, *:after{
-box-sizing: inherit;
-}
+*, *:before, *:after {
+  box-sizing: inherit; }
 
-a:link {
-	text-decoration: none;
-}
-
-body{
-	background-image: url(http://kulinarny02szablonkatemac.blox.pl/resource/k02_bg.jpg);
-	margin: 0;
-	margin-bottom: 40px;
-}
-
-nav{
-	font-family: 'Ubuntu', sans-serif;
-	position: fixed;
-	z-index: 100;
-	top: 0;
-	display: block;
-	height: 200px;
-	width: 100%;
-	margin-top: -10px;
-}
-
-nav img{
-	display: block;
-	width: auto;
-	height: 80%;
-	background-color: #fff5eb;
-	background-size: 80px;
-	border-color: #fff5eb;
-	border-radius: 10px;
-	padding: 35px 25px 25px 25px;
-	margin-left: 3%;
-	float: left;
-}
-
-nav ul {
-	color: #f5821f;
-	font-family: 'Ubuntu', sans-serif;
-	background-color: #fff5eb;
-	border-radius: 10px;
-	display: inline-block;
-	text-align: center;
-	line-height: 30px;
-	width: calc(100% - 287px);
-	margin-left: 3%;
-	padding: 1%;
-	list-style-type: none;
-}
-
-nav ul li {
-	width: 15%;
-	display: inline-block;
-	margin-right: 4%;
-}
-
-nav ul a {
-	color: #034ea2;
-	display: block;
-	padding: 7%;
-	text-decoration: none;
-	border-radius: 10px;
-	text-align: center;
-	-webkit-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
-}
-
-nav ul a:hover {
-	color: #fff5eb;
-	background-color: #f5821f;
-	border-radius: 10px;
-}
-
-.active {
-	color: #fff5eb;
-	background-color: #f5821f;
-	border-radius: 10px;
-	/*padding: 7%;*/
-}
-
-div.home {
-	background-color: rgba(255, 245, 235, 0.8);
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	color: black;
-	border-radius: 7px;
-	margin: 3%;
-	margin-top: 170px;
-	padding: 20px;
-}
-
-div.welcome {
-	float: left;
-	width: 45%;
-	text-align: center;
-	line-height: 30px;
-	padding: 0 5% 0 5%;
-	-webkit-animation-duration: 2s;
-	-webkit-animation-delay: 0s;
-}
-
-div.welcome h4, div.welcome p {
-	margin: 0;
-}
-
-div.welcome h4:last-of-type {
-	margin-bottom: 5%;
-}
-
-div.image {
-	width:40%;
-	margin: 0 3% 0 8%;
-	display: inline-block;
-}
-
-div.image img {
-	border-radius: 10px;
-	width: 100%;
-}
-
-div.about{
-	background-color: rgba(255, 245, 235, 0.8);
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	line-height: 20px;
-	color: black;
-	border-radius: 7px;
-	margin: 3%;
-	margin-top: 170px;
-	padding: 20px;
-}
-
-div.about img {
-	float: left;
-	width: 28%;
-	margin-top: 5%;
-	border-radius: 10px;
-}
-
-div.opis {
-	display: inline-block;
-	width: 72%;
-	padding-left: 3%;
-	text-align: justify;
-	list-style-position: inside;
-}
-
-div.offer{
-	background-color: rgba(255, 245, 235, 0.8);
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	color: black;
-	border-radius: 7px;
-	margin: 3%;
-	margin-top: 170px;
-	padding: 20px;
-}
-
-div.oferta {
-	width: 60%;
-	margin-left: 5%;
-	display: inline-block;
-}
-
-div.oferta i {
-	color: #034ea2;
-}
-
-div.oferta table {
-	border-spacing: 15px 0;
-}
-
-div.oferta p {
-	line-height: 12px;
-}
-
-div.offer .image2 {
-	float: left;
-	width: 30%;
-	margin-top: 5%;
-}
-
-div.offer img {
-	border-radius: 10px;
-	width: 100%;
-}
-
-.cycle-slideshow {
-	margin-left: 28%;
-	margin-right: 28%;
-	top: 150px;
-	width: 44%;
-	position: relative;
-}
-
-.cycle-prev {
-	left: 0;
-	background-image: url(../img/left.png);
-}
-
-.cycle-next {
-	right: 0;
-	background-image: url(../img/right.png);
-}
-
-.cycle-next, .cycle-prev {
-	position: absolute;
-	top: 0;
-	width: 20%;
-	opacity: 0;
-	z-index: 800;
-	height: 100%;
-	cursor: pointer;
-	background-repeat: no-repeat;
-	background-position: center, center;
-}
-
-.cycle-next:hover, .cycle-prev:hover {
-	opacity: 0.8;
-}
-.cycle-slideshow img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 100;
-	width: 100%;
-	padding: 0;
-	opacity: 1;
-	display: block;
-	visibility: visible;
-	border-radius: 10px;
-}
-
-div.kontakt{
-	background-color: rgba(255, 245, 235, 0.8);
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	color: black;
-	border-radius: 7px;
-	margin: 3%;
-	margin-top: 170px;
-	padding: 20px;
-	width: 60%;
-	display: inline-block;
-}
-
-div.kontakt div {
-	width: 48%;
-	margin: 0;
-	display: inline-block;
-}
-
-div.kontakt table {
-	display: inline-block;
-}
-
-.icon {
-	text-align: center;
-}
-
-div.kontakt i {
-	color: #f5821f;
-}
-
-#formularz {
-	float: left;
+body {
+  background-image: url(http://kulinarny02szablonkatemac.blox.pl/resource/k02_bg.jpg);
+  margin: 0;
+  margin-bottom: 40px; }
+  body nav {
+    font-family: "Ubuntu", sans-serif;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: block;
+    height: 200px;
+    width: 100%;
+    margin-top: -10px; }
+    @media screen and (max-width: 685px) {
+      body nav {
+        position: relative;
+        height: auto; } }
+    body nav img {
+      display: block;
+      width: auto;
+      height: 80%;
+      background-color: #fff5eb;
+      background-size: 80px;
+      border-color: #fff5eb;
+      border-radius: 10px;
+      padding: 35px 25px 25px 25px;
+      margin-left: 3%;
+      float: left; }
+      @media screen and (max-width: 685px) {
+        body nav img {
+          display: inline-block;
+          height: auto;
+          float: none;
+          margin-left: 4%; } }
+    @media screen and (max-width: 685px) {
+      body nav .bar {
+        display: inline-block;
+        margin-left: 20%;
+        margin-bottom: 3%; } }
+    @media screen and (max-width: 685px) {
+      body nav .bar .fa-bars {
+        color: #034ea2; } }
+    body nav ul {
+      color: #f5821f;
+      font-family: "Ubuntu", sans-serif;
+      background-color: #fff5eb;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: center;
+      line-height: 30px;
+      width: calc(100% - 287px);
+      margin-left: 3%;
+      padding: 1%;
+      list-style-type: none; }
+      @media screen and (max-width: 685px) {
+        body nav ul {
+          display: block;
+          width: 90%;
+          margin-top: 0;
+          margin-left: 4%;
+          margin-right: 3%;
+          line-height: 20px; } }
+      body nav ul li {
+        width: 15%;
+        display: inline-block;
+        margin-right: 4%; }
+        @media screen and (max-width: 685px) {
+          body nav ul li {
+            width: 100%;
+            margin: 0; } }
+      body nav ul a {
+        color: #034ea2;
+        display: block;
+        padding: 7%;
+        text-decoration: none;
+        border-radius: 10px;
+        text-align: center;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out; }
+        @media screen and (max-width: 685px) {
+          body nav ul a {
+            padding: 2%; } }
+      body nav ul a:hover {
+        color: #fff5eb;
+        background-color: #f5821f;
+        border-radius: 10px; }
+  body .home {
+    background-color: rgba(255, 245, 235, 0.8);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    color: black;
+    border-radius: 7px;
+    margin: 3%;
+    margin-top: 170px;
+    padding: 20px; }
+    @media screen and (max-width: 685px) {
+      body .home {
+        margin-top: 0;
+        display: block;
+        padding: 2%;
+        width: 90%;
+        margin-left: 4%;
+        margin-right: 3%; } }
+    body .home .welcome {
+      display: inline-block;
+      width: 45%;
+      text-align: center;
+      vertical-align: top;
+      line-height: 30px;
+      padding: 0 5% 0 5%;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 0s; }
+      @media screen and (max-width: 685px) {
+        body .home .welcome {
+          float: none;
+          width: 90%;
+          margin: 0;
+          margin-left: 3%; } }
+      body .home .welcome h4, body .home .welcome p {
+        margin: 0; }
+      body .home .welcome h4:last-of-type {
+        margin-bottom: 5%; }
+    body .home .image {
+      width: 40%;
+      margin: 0 3% 0 8%;
+      display: inline-block; }
+      @media screen and (max-width: 685px) {
+        body .home .image {
+          display: block;
+          width: 100%;
+          padding: 2%;
+          margin: 0; } }
+      body .home .image img {
+        border-radius: 10px;
+        width: 100%; }
+  body .about {
+    background-color: rgba(255, 245, 235, 0.8);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    border-radius: 7px;
+    margin: 3%;
+    margin-top: 170px;
+    padding: 20px; }
+    @media screen and (max-width: 685px) {
+      body .about {
+        margin-top: 0;
+        display: block;
+        padding: 2%;
+        width: 90%;
+        margin-left: 4%;
+        margin-right: 3%; } }
+    body .about img {
+      float: left;
+      width: 28%;
+      margin-top: 5%;
+      border-radius: 10px; }
+      @media screen and (max-width: 685px) {
+        body .about img {
+          width: 94%;
+          margin: 3%;
+          float: none; } }
+    body .about .opis {
+      display: inline-block;
+      width: 72%;
+      padding-left: 3%;
+      text-align: justify;
+      list-style-position: inside; }
+      @media screen and (max-width: 685px) {
+        body .about .opis {
+          width: 90%;
+          padding: 2%;
+          margin: 3%; } }
+  body .offer {
+    background-color: rgba(255, 245, 235, 0.8);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    color: black;
+    border-radius: 7px;
+    margin: 3%;
+    margin-top: 170px;
+    padding: 20px; }
+    @media screen and (max-width: 685px) {
+      body .offer {
+        margin-top: 0;
+        display: block;
+        padding: 2%;
+        width: 90%;
+        margin-left: 4%;
+        margin-right: 3%; } }
+    body .offer .image2 {
+      float: left;
+      width: 30%;
+      margin-top: 5%; }
+      @media screen and (max-width: 685px) {
+        body .offer .image2 {
+          width: 100%;
+          margin-top: 0; } }
+      body .offer .image2 img {
+        border-radius: 10px;
+        width: 100%; }
+        @media screen and (max-width: 685px) {
+          body .offer .image2 img {
+            width: 94%;
+            margin: 3%;
+            float: none; } }
+    body .offer .oferta {
+      width: 60%;
+      margin-left: 5%;
+      display: inline-block; }
+      @media screen and (max-width: 685px) {
+        body .offer .oferta {
+          width: 100%; } }
+      body .offer .oferta i {
+        color: #034ea2; }
+      body .offer .oferta table {
+        border-spacing: 15px 0; }
+      body .offer .oferta p {
+        line-height: 12px; }
+        @media screen and (max-width: 685px) {
+          body .offer .oferta p {
+            line-height: 20px; } }
+  body #gallery p, body #contact > p {
+    display: none; }
+    @media screen and (max-width: 685px) {
+      body #gallery p, body #contact > p {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 30px;
+        background-color: #fff5eb;
+        border-radius: 5px;
+        display: block;
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        text-align: center; } }
+  @media screen and (max-width: 685px) {
+    body .gallery {
+      margin-top: 0;
+      display: block; } }
+  body .gallery .cycle-slideshow {
+    margin-left: 28%;
+    margin-right: 28%;
+    top: 150px;
+    width: 44%;
+    position: relative; }
+    @media screen and (max-width: 685px) {
+      body .gallery .cycle-slideshow {
+        top: 0;
+        width: 96%;
+        margin-left: 3%;
+        margin-right: 3%; } }
+    body .gallery .cycle-slideshow .cycle-prev {
+      left: 0;
+      background-image: url(../img/left.png); }
+    body .gallery .cycle-slideshow .cycle-next {
+      right: 0;
+      background-image: url(../img/right.png); }
+    body .gallery .cycle-slideshow .cycle-next, body .gallery .cycle-slideshow .cycle-prev {
+      position: absolute;
+      top: 0;
+      width: 20%;
+      opacity: 0;
+      z-index: 800;
+      height: 100%;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center, center; }
+    body .gallery .cycle-slideshow .cycle-next:hover, body .gallery .cycle-slideshow .cycle-prev:hover {
+      opacity: 0.8; }
+    body .gallery .cycle-slideshow img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      width: 100%;
+      padding: 0;
+      opacity: 1;
+      display: block;
+      visibility: visible;
+      border-radius: 10px; }
+  @media screen and (max-width: 685px) {
+    body .contact {
+      margin-top: 0;
+      display: block; } }
+  body .contact #formularz {
+    float: left;
     width: 25%;
     border: 3px solid #fff5eb;
     border-radius: 10px;
-	padding: 15px;
-	margin-top: 170px;
-	margin-left: 3%;
-	display: inline-block;
-    margin-bottom:5px;
-    font-family: 'Ubuntu', sans-serif;
+    padding: 15px;
+    margin-top: 170px;
+    margin-left: 3%;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-	text-align: center;
+    text-align: center;
     font-size: 14px;
-    color: #555555;
-}
+    color: #555555; }
+    @media screen and (max-width: 685px) {
+      body .contact #formularz {
+        margin-top: 0;
+        display: block;
+        float: none;
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%; } }
+    body .contact #formularz p {
+      color: #034ea2;
+      margin-bottom: 15px; }
+    body .contact #formularz input {
+      font-family: "Ubuntu", sans-serif;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      width: 100%;
+      background-color: #fff5eb; }
+    body .contact #formularz textarea {
+      background-color: #fff5eb;
+      font-family: "Ubuntu", sans-serif;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      width: 100%;
+      height: 150px;
+      resize: none; }
+    body .contact #formularz input.wyslij {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: #034ea2;
+      background-color: #f5821f;
+      width: 100%;
+      height: 50px; }
+  body .contact div.kontakt {
+    background-color: rgba(255, 245, 235, 0.8);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    color: black;
+    border-radius: 7px;
+    margin: 3%;
+    margin-top: 170px;
+    padding: 20px;
+    width: 60%;
+    display: inline-block; }
+    @media screen and (max-width: 685px) {
+      body .contact div.kontakt {
+        margin-top: 0;
+        display: block;
+        float: none;
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%; } }
+    body .contact div.kontakt div {
+      width: 48%;
+      margin: 0;
+      display: inline-block; }
+      @media screen and (max-width: 685px) {
+        body .contact div.kontakt div {
+          display: block;
+          width: 100%; } }
+    body .contact div.kontakt table {
+      display: inline-block; }
+    body .contact div.kontakt .icon {
+      text-align: center; }
+    body .contact div.kontakt i {
+      color: #f5821f; }
+    body .contact div.kontakt .mapa {
+      height: 100%; }
+      @media screen and (max-width: 685px) {
+        body .contact div.kontakt .mapa {
+          margin-top: 0;
+          display: block;
+          float: none;
+          width: 94%;
+          margin-left: 3%;
+          margin-right: 3%; } }
+      body .contact div.kontakt .mapa iframe {
+        width: 100%; }
+  body footer {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #034ea2;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -0.5%;
+    height: 40px;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: #fff5eb;
+    border-radius: 10px 10px 0 0; }
+    @media screen and (max-width: 685px) {
+      body footer {
+        margin-top: 2%; } }
 
-#formularz p{
-	color: #034ea2;
-	margin-bottom: 15px;
-}
+a:link {
+  text-decoration: none; }
 
-#formularz input {
-	font-family: 'Ubuntu', sans-serif;
-	padding: 10px;
-	border-radius: 5px;
-	border:1px solid #ccc;
-	margin-bottom: 5px;
-	width: 100%;
-	background-color: #fff5eb;
-}
-
-#formularz textarea {
-	background-color: #fff5eb;
-	font-family: 'Ubuntu', sans-serif;
-	padding: 5px;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	margin-bottom: 5px;
-	width: 100%;
-	height: 150px;
-	resize: none;
-}
-
-#formularz input.wyslij {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	color: #034ea2;
-	background-color: #f5821f;
-	width: 100%;
-	height: 50px;
-}
-
-footer {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	text-align: center;
-	color: #034ea2;
-	display: block;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 40px;
-	width: 94%;
-	margin-left: 3%;
-	margin-right: 3%;
-	background-color: #fff5eb;
-	border-radius: 10px 10px 0 0;
-}
+.active {
+  color: #fff5eb;
+  background-color: #f5821f;
+  border-radius: 10px; }
 
 .selected {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	color: black;
-	border-radius: 7px;
-}
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: black;
+  border-radius: 7px; }
 
 .no-selected {
-	display: none;
-}
+  display: none; }
 
 .menubar {
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	display: block;
-}
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: block; }
 
-@media screen and (max-width: 685px){
-	nav {
-		position: relative;
-		height: auto;
-	}
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #034ea2;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0; }
 
-	nav img {
-		display: inline-block;
-		height: auto;
-		float: none;
-		margin-left: 5%;
-	}
+#back-to-top.show {
+  opacity: 1; }
 
-	nav .bar {
-		display: inline-block;
-		margin-left: 3%;
-	}
-
-	nav .bar .fa-bars {
-		color: #034ea2;
-	}
-
-	nav ul {
-		display: block;
-		width: 90%;
-		margin-left: 3%;
-		margin-right: 3%;
-	}
-
-	nav ul li {
-		width: 100%;
-		margin: 0;
-	}
-
-	nav ul li a {
-		padding: 2%;
-	}
-
-	div.home, div.about, div.offer, div.contact {
-		margin-top: 0;
-	}
-
-	div.home div.welcome, div.home div.image {
-		display: block;
-	}
-}
+/*# sourceMappingURL=style.css.map */

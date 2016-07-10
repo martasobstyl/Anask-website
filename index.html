@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
 	<title>Anask - wynajem pokoi</title>
 	<meta charset="UTF-8">
@@ -18,8 +18,9 @@
 </head>
 <body>
 	<nav>
-		<a href="#home"><img src="img/logo2.png"/></a>
-		<div class="bar no-selected"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+		<a href="#home"><img src="img/logo2.png" alt="Logo"/></a>
+		<div id="bar" class="bar no-selected static"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+		<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 		<ul id="menu">
 			<li><a href="#home" class="main active">HOME</a></li>
 			<li><a href="#about">O NAS</a></li>
@@ -32,21 +33,17 @@
 	<div id="home" class="home">
 		<div class="welcome animated fadeIn">
 			<h2>WITAMY SERDECZNIE !</h2>
-			<h4>Zapraszamy Państwa do naszego domu gościnnego ,,Anask"</h4>
-			<h4>zlokalizowanego w samym centrum aglomeracji górnośląskiej</h4>
-			<h4>w Czerwionce-Leszczynach.</h4>
-			<p>Miła atmosfera oraz dogodna lokalizacja sprawią,</p>
-			<p>że Państwa pobyt w Czerwionce-Leszczynach</p>
-			<p>na pewno będzie udany.</p>
+			<h4>Zapraszamy Państwa do naszego domu gościnnego ,,Anask" zlokalizowanego w samym centrum aglomeracji górnośląskiej w Rybniku.</h4>
+			<p>Miła atmosfera oraz dogodna lokalizacja sprawią, że Państwa pobyt w Rybniku na pewno będzie udany.</p>
 		</div>
 		<div class="image animated fadeIn">
-			<img src="img/rsz_img8.jpg">
+			<img src="img/rsz_img8.jpg" alt="img-witamy">
 		</div>
 	</div>
 
 	<div id="about" class="about no-selected">
 		<div class="animated fadeIn">
-			<img src="img/rsz_img1.png">
+			<img src="img/rsz_img1.png" alt="img-zapraszamy">
 		</div>
 		<div class="opis animated fadeIn">
 			<h3>Zapraszamy Państwa do naszego domu gościnnego!</h3>
@@ -69,7 +66,7 @@
 
 	<div id="offer" class="offer no-selected">
 		<div class="image2 animated fadeIn">
-			<img src="img/rsz_img9.jpg">
+			<img src="img/rsz_img9.jpg" alt="img-oferta">
 		</div>
 		<div class="oferta animated fadeIn">
 			<h3>Oferujemy Państwu:</h3>
@@ -106,19 +103,21 @@
 	</div>
 
 	<div id="gallery" class="gallery no-selected">
+		<p>Galeria</p>
 		<div class="cycle-slideshow animated fadeIn" data-cycle-fx=scrollHorz data-cycle-timeout=0>
 			<div class="cycle-prev"></div>
 			<div class="cycle-next"></div>
-			<img src="img/rsz_img2.jpg">
-			<img src="img/rsz_img3.jpg">
-			<img src="img/rsz_img4.jpg">
-			<img src="img/rsz_img5.jpg">
-			<img src="img/rsz_img6.jpg">
-			<img src="img/rsz_img7.jpg">
+			<img src="img/rsz_img2.jpg" alt="img-gal-kuchnia">
+			<img src="img/rsz_img3.jpg" alt="img-gal-pokoj">
+			<img src="img/rsz_img4.jpg" alt="img-gal-lazienka">
+			<img src="img/rsz_img5.jpg" alt="img-gal-schody">
+			<img src="img/rsz_img6.jpg" alt="img-gal-lozko1">
+			<img src="img/rsz_img7.jpg" alt="img-gal-lozko2">
 		</div>
 	</div>
 
 	<div id="contact" class="contact no-selected">
+		<p>Kontakt</p>
 		<form id="formularz" class="animated fadeIn">
 			<p>Formularz kontaktowy</p>
 			<input type="text" placeholder="Nazwa Firmy">
@@ -135,32 +134,32 @@
 					<tr>
 						<td class="icon"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></td>
 						<td>
-							<p>Anna Skoczykłoda</p>
-							<p>ul. Powstańców Śląskich 103 c</p>
-							<p>44-238 Czerwionka-Leszczyny</p>
+							<p>Anna Kowalska</p>
+							<p>ul. Teofila Bieli 76</p>
+							<p>44-213 Rybnik</p>
 							<p>woj. śląskie</p>
 						</td>
 					</tr>
 					<tr>
 						<td class="icon"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></td>
-						<td><p>513 - 151 - 859</p></td>
+						<td><p>500 - 123 - 456</p></td>
 					</tr>
 					<tr>
 						<td class="icon"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></td>
-						<td><p>anna@skoczykloda.pl</p></td>
+						<td><p>anna@kowalska.pl</p></td>
 					</tr>
 					</tbody>
 				</table>
 			</div>
-			<div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.4683654433297!2d18.646316315205205!3d50.13366941802141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47114a321a72048f%3A0xef7a481ec61bcc81!2sPowsta%C5%84c%C3%B3w+%C5%9Al%C4%85skich+103C%2C+44-238+Czerwionka-Leszczyny!5e0!3m2!1spl!2spl!4v1466174293878" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="mapa">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2556.657408743901!2d18.6214888152058!3d50.14884051693306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471149918f7ff551%3A0x8ac0523766c2f57f!2sTeofila+Bieli+76%2C+44-213+Rybnik%2C+Polska!5e0!3m2!1spl!2spl!4v1468073963870" height="300" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
 
 
 	<footer>
-		<p>&copy Anask 2016 ~ Wszelkie prawa zastrzeżone</p>
+		<p>&copy; Anask 2016 ~ Wszelkie prawa zastrzeżone</p>
 	</footer>
 	<script type="text/javascript" src="script/script.js"></script>
 </body>
