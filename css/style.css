@@ -7,9 +7,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-image: url(http://kulinarny02szablonkatemac.blox.pl/resource/k02_bg.jpg);
-  margin: 0;
-  margin-bottom: 40px; }
+  background-image: url(../img/back.jpg);
+  margin: 0 0 40px 0; }
   body nav {
     font-family: "Ubuntu", sans-serif;
     position: fixed;
@@ -19,7 +18,7 @@ body {
     height: 200px;
     width: 100%;
     margin-top: -10px; }
-    @media screen and (max-width: 685px) {
+    @media screen and (max-width: 850px) {
       body nav {
         position: relative;
         height: auto; } }
@@ -34,20 +33,42 @@ body {
       padding: 35px 25px 25px 25px;
       margin-left: 3%;
       float: left; }
-      @media screen and (max-width: 685px) {
+      @media screen and (max-width: 850px) {
         body nav img {
           display: inline-block;
           height: auto;
           float: none;
           margin-left: 4%; } }
-    @media screen and (max-width: 685px) {
-      body nav .bar {
-        display: inline-block;
-        margin-left: 20%;
-        margin-bottom: 3%; } }
-    @media screen and (max-width: 685px) {
-      body nav .bar .fa-bars {
-        color: #034ea2; } }
+    body nav .bar {
+      cursor: pointer; }
+      @media screen and (max-width: 850px) {
+        body nav .bar {
+          display: inline-block;
+          margin-left: 20%;
+          margin-bottom: 3%; } }
+      @media screen and (max-width: 850px) {
+        body nav .bar .fa-bars {
+          color: #034ea2; } }
+    body nav #back-to-top {
+      position: fixed;
+      bottom: 40px;
+      right: 10px;
+      z-index: 9999;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      line-height: 30px;
+      background: #034ea2;
+      color: white;
+      cursor: pointer;
+      border: 0;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: opacity 0.2s ease-out;
+      opacity: 0; }
+      body nav #back-to-top.show {
+        opacity: 1;
+        cursor: pointer; }
     body nav ul {
       color: #f5821f;
       font-family: "Ubuntu", sans-serif;
@@ -60,7 +81,7 @@ body {
       margin-left: 3%;
       padding: 1%;
       list-style-type: none; }
-      @media screen and (max-width: 685px) {
+      @media screen and (max-width: 850px) {
         body nav ul {
           display: block;
           width: 90%;
@@ -72,7 +93,7 @@ body {
         width: 15%;
         display: inline-block;
         margin-right: 4%; }
-        @media screen and (max-width: 685px) {
+        @media screen and (max-width: 850px) {
           body nav ul li {
             width: 100%;
             margin: 0; } }
@@ -85,7 +106,7 @@ body {
         text-align: center;
         -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out; }
-        @media screen and (max-width: 685px) {
+        @media screen and (max-width: 850px) {
           body nav ul a {
             padding: 2%; } }
       body nav ul a:hover {
@@ -101,7 +122,7 @@ body {
     margin: 3%;
     margin-top: 170px;
     padding: 20px; }
-    @media screen and (max-width: 685px) {
+    @media screen and (max-width: 850px) {
       body .home {
         margin-top: 0;
         display: block;
@@ -118,12 +139,11 @@ body {
       padding: 0 5% 0 5%;
       -webkit-animation-duration: 2s;
       -webkit-animation-delay: 0s; }
-      @media screen and (max-width: 685px) {
+      @media screen and (max-width: 850px) {
         body .home .welcome {
           float: none;
           width: 90%;
-          margin: 0;
-          margin-left: 3%; } }
+          margin: 0 0 0 3%; } }
       body .home .welcome h4, body .home .welcome p {
         margin: 0; }
       body .home .welcome h4:last-of-type {
@@ -132,7 +152,7 @@ body {
       width: 40%;
       margin: 0 3% 0 8%;
       display: inline-block; }
-      @media screen and (max-width: 685px) {
+      @media screen and (max-width: 850px) {
         body .home .image {
           display: block;
           width: 100%;
@@ -151,7 +171,7 @@ body {
     margin: 3%;
     margin-top: 170px;
     padding: 20px; }
-    @media screen and (max-width: 685px) {
+    @media screen and (max-width: 850px) {
       body .about {
         margin-top: 0;
         display: block;
@@ -164,7 +184,7 @@ body {
       width: 28%;
       margin-top: 5%;
       border-radius: 10px; }
-      @media screen and (max-width: 685px) {
+      @media screen and (max-width: 850px) {
         body .about img {
           width: 94%;
           margin: 3%;
@@ -175,7 +195,7 @@ body {
       padding-left: 3%;
       text-align: justify;
       list-style-position: inside; }
-      @media screen and (max-width: 685px) {
+      @media screen and (max-width: 850px) {
         body .about .opis {
           width: 90%;
           padding: 2%;
@@ -189,7 +209,7 @@ body {
     margin: 3%;
     margin-top: 170px;
     padding: 20px; }
-    @media screen and (max-width: 685px) {
+    @media screen and (max-width: 850px) {
       body .offer {
         margin-top: 0;
         display: block;
@@ -201,14 +221,14 @@ body {
       float: left;
       width: 30%;
       margin-top: 5%; }
-      @media screen and (max-width: 685px) {
+      @media screen and (max-width: 850px) {
         body .offer .image2 {
           width: 100%;
           margin-top: 0; } }
       body .offer .image2 img {
         border-radius: 10px;
         width: 100%; }
-        @media screen and (max-width: 685px) {
+        @media screen and (max-width: 850px) {
           body .offer .image2 img {
             width: 94%;
             margin: 3%;
@@ -217,21 +237,18 @@ body {
       width: 60%;
       margin-left: 5%;
       display: inline-block; }
-      @media screen and (max-width: 685px) {
+      @media screen and (max-width: 850px) {
         body .offer .oferta {
           width: 100%; } }
       body .offer .oferta i {
         color: #034ea2; }
       body .offer .oferta table {
         border-spacing: 15px 0; }
-      body .offer .oferta p {
-        line-height: 12px; }
-        @media screen and (max-width: 685px) {
-          body .offer .oferta p {
-            line-height: 20px; } }
+      body .offer .oferta li {
+        line-height: 20px; }
   body #gallery p, body #contact > p {
     display: none; }
-    @media screen and (max-width: 685px) {
+    @media screen and (max-width: 850px) {
       body #gallery p, body #contact > p {
         font-family: "Ubuntu", sans-serif;
         font-size: 18px;
@@ -244,52 +261,27 @@ body {
         margin-left: 3%;
         margin-right: 3%;
         text-align: center; } }
-  @media screen and (max-width: 685px) {
+  @media screen and (max-width: 850px) {
     body .gallery {
       margin-top: 0;
       display: block; } }
-  body .gallery .cycle-slideshow {
-    margin-left: 28%;
-    margin-right: 28%;
-    top: 150px;
-    width: 44%;
-    position: relative; }
-    @media screen and (max-width: 685px) {
-      body .gallery .cycle-slideshow {
-        top: 0;
-        width: 96%;
-        margin-left: 3%;
-        margin-right: 3%; } }
-    body .gallery .cycle-slideshow .cycle-prev {
-      left: 0;
-      background-image: url(../img/left.png); }
-    body .gallery .cycle-slideshow .cycle-next {
-      right: 0;
-      background-image: url(../img/right.png); }
-    body .gallery .cycle-slideshow .cycle-next, body .gallery .cycle-slideshow .cycle-prev {
-      position: absolute;
-      top: 0;
-      width: 20%;
-      opacity: 0;
-      z-index: 800;
-      height: 100%;
-      cursor: pointer;
-      background-repeat: no-repeat;
-      background-position: center, center; }
-    body .gallery .cycle-slideshow .cycle-next:hover, body .gallery .cycle-slideshow .cycle-prev:hover {
-      opacity: 0.8; }
-    body .gallery .cycle-slideshow img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 100;
-      width: 100%;
+  body .gallery .galeria-lightbox {
+    margin-top: 170px;
+    margin-left: 20%; }
+    @media screen and (max-width: 850px) {
+      body .gallery .galeria-lightbox {
+        margin-top: 0;
+        margin-left: 12%; } }
+    body .gallery .galeria-lightbox img {
+      top: 170px;
+      width: 25%;
       padding: 0;
+      margin: 1%;
       opacity: 1;
-      display: block;
+      display: inline-block;
       visibility: visible;
       border-radius: 10px; }
-  @media screen and (max-width: 685px) {
+  @media screen and (max-width: 850px) {
     body .contact {
       margin-top: 0;
       display: block; } }
@@ -309,7 +301,7 @@ body {
     text-align: center;
     font-size: 14px;
     color: #555555; }
-    @media screen and (max-width: 685px) {
+    @media screen and (max-width: 850px) {
       body .contact #formularz {
         margin-top: 0;
         display: block;
@@ -345,7 +337,8 @@ body {
       color: #034ea2;
       background-color: #f5821f;
       width: 100%;
-      height: 50px; }
+      height: 50px;
+      cursor: pointer; }
   body .contact div.kontakt {
     background-color: rgba(255, 245, 235, 0.8);
     font-family: "Ubuntu", sans-serif;
@@ -357,7 +350,7 @@ body {
     padding: 20px;
     width: 60%;
     display: inline-block; }
-    @media screen and (max-width: 685px) {
+    @media screen and (max-width: 850px) {
       body .contact div.kontakt {
         margin-top: 0;
         display: block;
@@ -369,7 +362,7 @@ body {
       width: 48%;
       margin: 0;
       display: inline-block; }
-      @media screen and (max-width: 685px) {
+      @media screen and (max-width: 850px) {
         body .contact div.kontakt div {
           display: block;
           width: 100%; } }
@@ -381,7 +374,7 @@ body {
       color: #f5821f; }
     body .contact div.kontakt .mapa {
       height: 100%; }
-      @media screen and (max-width: 685px) {
+      @media screen and (max-width: 850px) {
         body .contact div.kontakt .mapa {
           margin-top: 0;
           display: block;
@@ -406,7 +399,7 @@ body {
     margin-right: 3%;
     background-color: #fff5eb;
     border-radius: 10px 10px 0 0; }
-    @media screen and (max-width: 685px) {
+    @media screen and (max-width: 850px) {
       body footer {
         margin-top: 2%; } }
 
@@ -432,26 +425,5 @@ a:link {
   margin-left: 5%;
   margin-right: 5%;
   display: block; }
-
-#back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
-  z-index: 9999;
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  line-height: 30px;
-  background: #034ea2;
-  color: white;
-  cursor: pointer;
-  border: 0;
-  border-radius: 2px;
-  text-decoration: none;
-  transition: opacity 0.2s ease-out;
-  opacity: 0; }
-
-#back-to-top.show {
-  opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

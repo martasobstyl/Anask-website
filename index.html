@@ -7,13 +7,15 @@
 	<link rel="Shortcut icon" href="img/rsz_1logo2.png" />
 
 	<script type="text/javascript" src="script/jquery-3.0.0.min.js" ></script>
-	<script type="text/javascript" src="script/script.js"></script>
 	<script src="script/jquery.cycle2.js"></script>
 
-	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="script/script.js"></script>
+
 	<link type="text/css" rel="stylesheet" href="css/animate.min.css">
+	<link type="text/css" rel="stylesheet" href="css/lightbox.css">
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -71,32 +73,33 @@
 		<div class="oferta animated fadeIn">
 			<h3>Oferujemy Państwu:</h3>
 			<table>
-				<thead></thead>
 				<tbody>
-				<tr>
-					<td class="icon"><i class="fa fa-bed fa-2x" aria-hidden="true"></i></td>
-					<td>
-						<p>• nocleg w pokojach -2, -3, -4, -6 i -9 osobowych</p>
-						<p>• recepcję czynną 24h na dobę</p>
-						<p>• bezpłatny Internet (Wi-Fi)</p>
-						<p>• w pełni wyposażoną kuchnię</p>
-						<p>• bezpłatną przechowalnię bagaży</p>
-						<p>• TV SAT we wszystkich pokojach</p>
-						<p>• możliwość wypożyczenia ręczników</p>
-					</td>
-				</tr>
-				<tr>
-					<td class="icon"><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i></td>
-					<td><p>Doba hotelowa od 14:00 do 10:00</p></td>
-				</tr>
-				<tr>
-				<td class="icon"><i class="fa fa-users fa-2x" aria-hidden="true"></i></td>
-				<td><p>Do dyspozycji gości: sala kominkowa, miejsce na ognisko, boisko do gry, grill, kuchnia ogólnodostępna</p></td>
-				</tr>
-				<tr>
-					<td class="icon"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i></td>
-					<td><p>Udogodnienia: pralka, deska do prasowania, żelazko</p></td>
-				</tr>
+					<tr>
+						<td class="icon"><i class="fa fa-bed fa-2x" aria-hidden="true"></i></td>
+						<td>
+							<ul>
+								<li>nocleg w pokojach -2, -3, -4, -6 i -9 osobowych</li>
+								<li>recepcję czynną 24h na dobę</li>
+								<li>bezpłatny Internet (Wi-Fi)</li>
+								<li>w pełni wyposażoną kuchnię</li>
+								<li>bezpłatną przechowalnię bagaży</li>
+								<li>TV SAT we wszystkich pokojach</li>
+								<li>możliwość wypożyczenia ręczników</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td class="icon"><i class="fa fa-suitcase fa-2x" aria-hidden="true"></i></td>
+						<td><p>Doba hotelowa od 14:00 do 10:00</p></td>
+					</tr>
+					<tr>
+					<td class="icon"><i class="fa fa-users fa-2x" aria-hidden="true"></i></td>
+					<td><p>Do dyspozycji gości: sala kominkowa, miejsce na ognisko, boisko do gry, grill, kuchnia ogólnodostępna</p></td>
+					</tr>
+					<tr>
+						<td class="icon"><i class="fa fa-check-square fa-2x" aria-hidden="true"></i></td>
+						<td><p>Udogodnienia: pralka, deska do prasowania, żelazko</p></td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
@@ -104,15 +107,14 @@
 
 	<div id="gallery" class="gallery no-selected">
 		<p>Galeria</p>
-		<div class="cycle-slideshow animated fadeIn" data-cycle-fx=scrollHorz data-cycle-timeout=0>
-			<div class="cycle-prev"></div>
-			<div class="cycle-next"></div>
-			<img src="img/rsz_img2.jpg" alt="img-gal-kuchnia">
-			<img src="img/rsz_img3.jpg" alt="img-gal-pokoj">
-			<img src="img/rsz_img4.jpg" alt="img-gal-lazienka">
-			<img src="img/rsz_img5.jpg" alt="img-gal-schody">
-			<img src="img/rsz_img6.jpg" alt="img-gal-lozko1">
-			<img src="img/rsz_img7.jpg" alt="img-gal-lozko2">
+
+		<div class="galeria-lightbox">
+			<a href="img/rsz_img2.jpg" data-lightbox="galeria"><img src="img/rsz_img2.jpg" alt="img-gal-kuchnia"></a>
+			<a href="img/rsz_img3.jpg" data-lightbox="galeria"><img src="img/rsz_img3.jpg" alt="img-gal-pokoj"></a>
+			<a href="img/rsz_img4.jpg" data-lightbox="galeria"><img src="img/rsz_img4.jpg" alt="img-gal-lazienka"></a>
+			<a href="img/rsz_img5.jpg" data-lightbox="galeria"><img src="img/rsz_img5.jpg" alt="img-gal-schody"></a>
+			<a href="img/rsz_img6.jpg" data-lightbox="galeria"><img src="img/rsz_img6.jpg" alt="img-gal-lozko1"></a>
+			<a href="img/rsz_img7.jpg" data-lightbox="galeria"><img src="img/rsz_img7.jpg" alt="img-gal-lozko2"></a>
 		</div>
 	</div>
 
@@ -161,6 +163,7 @@
 	<footer>
 		<p>&copy; Anask 2016 ~ Wszelkie prawa zastrzeżone</p>
 	</footer>
-	<script type="text/javascript" src="script/script.js"></script>
+
+	<script src="script/lightbox.min.js"></script>
 </body>
 </html>
