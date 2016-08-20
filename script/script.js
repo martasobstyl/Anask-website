@@ -44,4 +44,24 @@ $(document).ready(function () {
         }, 700);
     });
 
+
+    $('#submit').click(function (){
+        $('#formularz').submit(function (event) {
+            event.preventDefault();
+            var data = {
+                name: $('input#name').val(),
+                email: $('input#email').val(),
+                message: $('textarea#message').val()
+            };
+            $.ajax({
+                url: 'form.php',
+                type: 'post',
+                dataType: 'json',
+                data: data,
+                success: function () {
+                }
+            });
+            alert('Dziękujemy za przesłanie formularza. Skontaktujemy się z Państwem w najbliższym czasie.');
+        })
+    });
 });
