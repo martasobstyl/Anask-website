@@ -16,5 +16,6 @@ if($_POST) {
     $naglowek .= "Content-Type:text/plain;charset=utf-8";
 
     $send = mail($dokogo, $tytul, $wiadomosc, $naglowek);
+
 }
 ?>

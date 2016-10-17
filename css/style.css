@@ -2,7 +2,10 @@ html {
   box-sizing: border-box;
   position: relative;
   min-height: 100%;
-  overflow-y: hidden; }
+  cursor: pointer; }
+  @media screen and (min-width: 850px) {
+    html {
+      overflow-y: hidden; } }
 
 *, *:before, *:after {
   box-sizing: inherit; }

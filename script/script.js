@@ -45,7 +45,7 @@ $(document).ready(function () {
     });
 
 
-    $('#submit').click(function (){
+    $('#submit').click(function () {
         $('#formularz').submit(function (event) {
             event.preventDefault();
             var data = {
@@ -53,6 +53,7 @@ $(document).ready(function () {
                 email: $('input#email').val(),
                 message: $('textarea#message').val()
             };
+
             $.ajax({
                 url: 'form.php',
                 type: 'post',
@@ -61,7 +62,8 @@ $(document).ready(function () {
                 success: function () {
                 }
             });
+            $('#formularz')[0].reset();
             alert('Dziękujemy za przesłanie formularza. Skontaktujemy się z Państwem w najbliższym czasie.');
-        })
+        });
     });
 });

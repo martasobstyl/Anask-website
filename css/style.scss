@@ -8,7 +8,10 @@ html{
   box-sizing: border-box;
   position: relative;
   min-height: 100%;
-  overflow-y: hidden;
+  cursor: pointer;
+  @media screen and (min-width: 850px){
+    overflow-y: hidden;
+  }
 }
 
 *, *:before, *:after{
